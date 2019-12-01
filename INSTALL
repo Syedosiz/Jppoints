@@ -1,0 +1,9 @@
+Building Jppoints
+
+See doc/readme-qt.rst for instructions on building Jppoints-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Jppoints.
+
+See doc/build-*.txt for instructions on building Jppointsd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Jppoints.

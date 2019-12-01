@@ -1,0 +1,34 @@
+src/*.exe
+src/Jppoints
+src/Jppointsd
+src/test_Jppoints
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
+*.o
+*.patch
+.Jppoints
+
+# Compilation and Qt preprocessor part
+*.qm
+Makefile
+Jppoints-qt
+Jppoints-Qt.app
+
+# Unit-tests
+Makefile.test
+Jppoints-qt_test
+
+# Resources cpp
+qrc_*.cpp
+
+# Qt creator
+*.pro.user
+
+# Mac specific
+.DS_Store
+build
+
+!src/leveldb*/Makefile
