@@ -13,7 +13,7 @@ packages:
 - "faketime"
 reference_datetime: "2011-01-30 00:00:00"
 remotes:
-- "url": "https://github.com/Jppoints-project/Jppoints.git"
+- "url": "https://github.com/Syedosiz/Jppoints.git"
   "dir": "Jppoints"
 files:
 - "qt-win32-4.8.5-gitian-r8.zip"
