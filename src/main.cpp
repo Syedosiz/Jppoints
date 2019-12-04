@@ -35,7 +35,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x61da5357e660a3ce276b9084e4a03bb53784105d8cb3a0af00b9e3b63828c938");
+uint256 hashGenesisBlock("0x84e9a4ac65cf870580e305238747b33ba99df73cd4cdce818e2d1a026cfb01e2");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Jppoints: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2746,7 +2746,7 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 0xc2;
         pchMessageStart[2] = 0xba;
         pchMessageStart[3] = 0xdb;
-        hashGenesisBlock = uint256("0x8261297620ec8a989d61dd87a58b7734558757add2e93f0564e89056b27f091d");
+        hashGenesisBlock = uint256("0xb1681e4ad07fe46595951d01bae84acb3b1da010f9ba0269fe7dcb7c28cf5cc1");
     }
 
     //
@@ -2791,17 +2791,17 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1575202745;
+        block.nTime    = 1575457384;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 2085617239;
+        block.nNonce   = 2086523701;
 
         if (fTestNet)
         {
-            block.nTime    = 1575202731;
-            block.nNonce   = 386746708;
+            block.nTime    = 1575457351;
+            block.nNonce   = 389067223;
         }
 
-if (false && block.GetHash() != hashGenesisBlock)
+if (true && block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
